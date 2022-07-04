@@ -1,0 +1,45 @@
+main {
+	max-width: 1000px;
+    margin: auto;
+    background-color: whitesmoke;
+}
+
+div.header {
+	display: flex;
+}
+
+h1 {
+	 margin: 0 100px;
+	
+}
+
+img.portret {
+	border-radius: 50%;
+	
+}
+
+p.job {
+	font-size: 20px;	
+	
+}
+
+div.social {
+	
+}
+
+div.information {
+	display: flex;
+	flex-direction: column;
+}
+
+p.info-loc, .info-tel, .info-email {
+	margin-top: 10px;
+	padding-left: 100%;
+}
+div.skills {
+
+}
+
+ul.skill-list {
+	list-style-type: none;
+}
