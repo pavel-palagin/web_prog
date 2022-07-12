@@ -9,8 +9,15 @@
 
     function dialog()
     {
-        let name = prompt('What is your name: ');
-        alert(name);
+        if(confirm('Перейти к вводу имени?'))
+        {
+            let name = prompt('What is your name: ');
+            alert('Привет, ' + name);
+        }
+        else{
+            alert('Привет, Гость');
+        }
+
     }
     dialog()
 
