@@ -6,8 +6,12 @@
   $tel = 8900000007;
   $age = 2022-1990;
   $days = $age*365;
-  $array = ['10%', '20%', '30%', '40%', '50%'];
-  $lang = ['30%', '0%', '0%']
+  $skills = ['10%', '20%', '30%', '40%', '50%'];
+  $lang = ['20%', '0%', '0%'];
+  $job = ['Developer', 'Engineer', 'Manager'];
+  $experience = ["Прошел курс по основам C# и Python. Сейчас прохожу обучение по основам Web-программирования, а именно: HTML, CSS, JavaScript, а также PHP, SQL", "Работаю в одной крупнейшей компании по предоставлению услуг сотовой связи", "Работал в компании по продаже осветительного оборудования, но занимался не прямыми продажами, а через механизм энергосервисного контракта."];
+
+   // $experience = {[Developer:'Прошел курс по основам C# и Python. Сейчас прохожу обучение по основам Web-программирования, а именно: HTML, CSS, JavaScript, а также PHP, SQL', Engineer:'Работаю в одной крупнейшей компании по предоставлению услуг сотовой связи']};
 ?>
 
 <!DOCTYPE html>
@@ -38,9 +42,9 @@
     
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
-          <img src="https://imgfon.ru/Images/Details_img_880px/Animals/glaza-belyy_fon-kotik-morda-polosatyy.webp" style="width:100%" alt="Avatar">
+          <img src="images/foto.png" style="width:100%" alt="Avatar">
           <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2><?php echo $name ?></h2>
+            <h2 style="color:#ffffff; font-weight: bold"><?php echo $name ?></h2>
           </div>
         </div>
         <div class="w3-container">
@@ -53,39 +57,39 @@
           <hr>
 
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Навыки</b></p>
-          <p>Figma</p>
+          <p>Zeplin</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<?php echo $array[0] ?>"><?php echo $array[0] ?></div>
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<?php echo $skills[0] ?>"><?php echo $skills[0] ?></div>
           </div>
           <p>PyCharm</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<?php echo $array[1] ?>">
-              <div class="w3-center w3-text-white"><?php echo $array[1] ?></div>
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<?php echo $skills[1] ?>">
+              <div class="w3-center w3-text-white"><?php echo $skills[1] ?></div>
             </div>
           </div>
           <p>SQL</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<?php echo $array[2] ?>"><?php echo $array[2] ?></div>
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<?php echo $skills[2] ?>"><?php echo $skills[2] ?></div>
           </div>
           <p>Windows</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<?php echo $array[3] ?>"><?php echo $array[3] ?></div>
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<?php echo $skills[3] ?>"><?php echo $skills[3] ?></div>
           </div>
           <br>
 
           <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Языки</b></p>
           <p>Английский</p>
           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:<?php echo $lang[0] ?>"></div>
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:<?php echo $lang[0] ?>"><?php echo $lang[0] ?></div>
           </div>
-          <p>Испанский</p>
+          <!-- <p>Испанский</p>
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:<?php echo $lang[1] ?>"></div>
           </div>
           <p>Немецкий</p>
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:<?php echo $lang[2] ?>"></div>
-          </div>
+          </div> -->
           <br>
         </div>
       </div><br>
@@ -99,21 +103,21 @@
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Front End Developer </b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <h5 class="w3-opacity"><b><?php echo $job[0] ?></b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2022 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <p><?php echo $experience[0]?></p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <h5 class="w3-opacity"><b><?php echo $job[1] ?></b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2020 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <p><?php echo $experience[1]?></p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+          <h5 class="w3-opacity"><b><?php echo $job[2] ?></b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2018 - May 2020</h6>
+          <p><?php echo $experience[2]?></p><br>
         </div>
       </div>
 
